@@ -1,17 +1,23 @@
 function App() {
-
-
-  function Customer(){
+  return (
+    <>
+      <h1>Hello</h1>
+      <Customer />
+      <Slary/>
+   
+    </>
+  );
+}
+  function Customer() {
     return <h2>Suwanth Darshana</h2>;
   }
 
-  const Address =()=>{
+  const Slary = () => <h2>50000</h2>
+
+  const Address = () => {
     return <h3>Colombo</h3>;
   }
 
-  return <>
-    <h1>Hello</h1>
-  </>;
-}
+
 
 export default App;
