@@ -1,23 +1,16 @@
+import "./App.css";
+import Customer from "./Customer";
+
 function App() {
+
+  const user1 ={name: "Jhon Cena", salary: "50000"};
   return (
     <>
-      <h1>Hello</h1>
-      <Customer />
-      <Slary/>
-   
+      <Customer name={user1.name} salary={user1.salary} />
+      <Customer name="Jack Wilson" salary="60000"/>
+      <Customer name="Alice Johnson " salary="70000"/>
     </>
   );
 }
-  function Customer() {
-    return <h2>Suwanth Darshana</h2>;
-  }
-
-  const Slary = () => <h2>50000</h2>
-
-  const Address = () => {
-    return <h3>Colombo</h3>;
-  }
-
-
 
 export default App;
