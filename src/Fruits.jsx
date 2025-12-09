@@ -22,7 +22,7 @@ function Fruits() {
         <ol>
             {cars.map(cars=><li key={cars}>{cars}</li>)}
         </ol>
-        <button onClick={message} disabled={true}>Click Me</button>
+        <button onClick={message} disabled={false}>Click Me</button>
         <h1>{(x) < 20 ? "Banana" : "Apple" }</h1>
     </div>
   )

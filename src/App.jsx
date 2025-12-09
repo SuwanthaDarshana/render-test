@@ -1,4 +1,5 @@
 import "./App.css";
+import Car from "./components/Car";
 import Customer from "./Customer";
 import Fruits from "./Fruits";
 
@@ -11,6 +12,7 @@ function App() {
       <Customer name="Jack Wilson" salary="60000"/>
       <Customer name="Alice Johnson " salary="70000"/>
       <Fruits/>
+      <Car/>
     </>
   );
 }
