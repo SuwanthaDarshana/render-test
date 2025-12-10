@@ -5,14 +5,21 @@ import Fruits from "./Fruits";
 
 function App() {
 
-  const user1 ={name: "Jhon Cena", salary: "50000"};
+  const customers =[
+    {id: 1,name: "Jhon Cena", salary: "50000"},
+    {id: 2,name: "Jack Wilson", salary: "60000"},
+    {id: 3,name: "Alice Johnson", salary: "70000"},
+
+  ]
+
+
   return (
     <>
-      <Customer name={user1.name} salary={user1.salary} />
-      <Customer name="Jack Wilson" salary="60000"/>
-      <Customer name="Alice Johnson " salary="70000"/>
-      <Fruits/>
-      <Car/>
+    {customers.map((customer)=>{
+      const {name,salary,id} = customer;
+      return <Customer key={id} name={name} salary={salary}/>
+    })}
+      
     </>
   );
 }
