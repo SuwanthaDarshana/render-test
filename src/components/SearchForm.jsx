@@ -1,19 +1,37 @@
 import React from "react";
 
 function SearchForm() {
-  const manageChangeEvent = () => {
-    console.log("Change Event Managed");
+
+  const [clearInput, setClearInput] = React.useState("");
+
+
+  const manageChangeEvent = (e) => {
+    console.log(e.target.value);
   }
 
-  const manageClickEvent = () => {
+  const manageClickEvent = (e) => {
+    e.preve
     console.log("Click Event Managed");
+
+  }
+
+  const mangeSubmitEvent =(e)=>{
+    console.log("Form Submitted");
+  }
+
+  const manageResetEvent =(e)=>{
+    console.log("Form Reset");
+    setClearInput("");
+
   }
 
   return (
     <div className="search-outer">
-      <form action="">
+      <form onSubmit={mangeSubmitEvent}>
         <input type="search" onChange={manageChangeEvent} /> &nbsp;
-        <button type="button" onClick={manageClickEvent}>Search</button>
+        <button type="submit" onClick={manageClickEvent}>Search</button>
+        <button type="reset" onClick={manageResetEvent}>Reset</button>
+
       </form>
     </div>
   );

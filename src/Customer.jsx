@@ -4,7 +4,7 @@ import Name from "./Name";
 import Salary from "./Salary";
 
 function Customer(props) {
-    console.log(props);
+    // console.log(props);
     const { name, salary } = props;
   return (
     <div className="user-outer">
