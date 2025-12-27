@@ -31,7 +31,6 @@ function SearchForm() {
         <input type="search" onChange={manageChangeEvent} /> &nbsp;
         <button type="submit" onClick={manageClickEvent}>Search</button>
         <button type="reset" onClick={manageResetEvent}>Reset</button>
-        <input type="search" value={clearInput} onChange={manageChangeEvent} />
       </form>
     </div>
   );
