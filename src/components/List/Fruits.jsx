@@ -9,6 +9,8 @@ function Fruits() {
         {id:2, brand:"BMW"},
         {id:3, brand:"Audi"}
     ]
+
+    const colors =['Red', 'Green', 'Blue', 'Yellow'];
    
   return (
 
@@ -19,6 +21,9 @@ function Fruits() {
         <ol>
             {cars.map(cars=><li key={cars.id}>{cars.brand}</li>)}
         </ol>
+        <ul>
+            {colors.map((color, index)=><li key={index}>{color}</li>)}
+        </ul>
     </div>
   )
 }
