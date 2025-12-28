@@ -8,9 +8,12 @@ function Goal(props) {
 //     return <MadeGoal />;
 //   }
 //   return <MissedGoal />;
+
+ /* -----Ternary Operator----- */
 return(
     <>
-    {isGoal ? <MadeGoal /> : <MissedGoal />}
+    {isGoal ? <MadeGoal /> : <MissedGoal />}  
+    {isGoal && <button>Click Me</button>}
 </>
 )
 }
