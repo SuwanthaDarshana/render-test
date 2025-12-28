@@ -1,8 +1,7 @@
 import "./App.css";
-import Car from "./components/Car";
-import SearchForm from "./components/SearchForm";
-import Customer from "./Customer";
-import Fruits from "./Fruits";
+import Goal from "./components/ConditionalRendering/Goal";
+import SearchForm from "./components/ReactEvents/SearchForm";
+import Customer from "./components/Props/Customer";
 
 function App() {
   const customers = [
@@ -17,6 +16,7 @@ function App() {
       {customers.map((customer) => {
         return <Customer {...customer} key={customer.id} />;
       })}
+      <Goal isGoal={false}/>
     </div>
   );
 }
