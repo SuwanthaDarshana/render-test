@@ -3,6 +3,7 @@ import Goal from "./components/ConditionalRendering/Goal";
 import SearchForm from "./components/ReactEvents/SearchForm";
 import Customer from "./components/Props/Customer";
 import Fruits from "./components/List/Fruits";
+import MyForm from "./components/Forms/MyForm";
 
 function App() {
   const customers = [
@@ -19,6 +20,7 @@ function App() {
       })}
       <Goal isGoal={true}/>
       <Fruits/>
+      <MyForm/>
     </div>
   );
 }

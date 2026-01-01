@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function MyForm() {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
-    <div>MyForm</div>
+    <div>
+        <form>
+            <label>Enter Your Name:</label>
+            <input type="text" id="name" name="name" />
+            <input ></input>
+        </form>
+    </div>
   )
 }
 
