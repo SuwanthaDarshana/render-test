@@ -10,7 +10,7 @@ function MyForm() {
         <form>
             <label>Enter Your Name:</label>
             <input type="text" id="name" name="name" />
-            <input ></input>
+            <input type='text' ></input>
         </form>
     </div>
   )
