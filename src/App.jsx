@@ -6,6 +6,8 @@ import Fruits from "./components/List/Fruits";
 import MyForm from "./components/Forms/MyForm";
 import MultipleInput from "./components/Forms/MultipleInput";
 import CheckBox from "./components/Forms/CheckBox";
+import RadioButton from "./components/Forms/RadioButton";
+import DropDown from "./components/Forms/DropDown";
 
 function App() {
   const customers = [
@@ -25,6 +27,9 @@ function App() {
       <MyForm/>
       <MultipleInput/>
       <CheckBox/>
+      <RadioButton/>
+      <DropDown/>
+
     </div>
   );
 }

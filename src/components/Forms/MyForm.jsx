@@ -5,7 +5,7 @@ function MyForm() {
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();            // prevent page reload on form submission
     console.log("Form submitted with Email:", email, "and Password:", password);
   };
 
@@ -31,6 +31,8 @@ function MyForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        <br />
+        <p>Current Email: {email}</p>
         <br /> <br />
         <button type="submit">Login</button>
       </form>
