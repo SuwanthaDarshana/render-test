@@ -4,6 +4,8 @@ import SearchForm from "./components/ReactEvents/SearchForm";
 import Customer from "./components/Props/Customer";
 import Fruits from "./components/List/Fruits";
 import MyForm from "./components/Forms/MyForm";
+import MultipleInput from "./components/Forms/MultipleInput";
+import CheckBox from "./components/Forms/CheckBox";
 
 function App() {
   const customers = [
@@ -21,6 +23,8 @@ function App() {
       <Goal isGoal={true}/>
       <Fruits/>
       <MyForm/>
+      <MultipleInput/>
+      <CheckBox/>
     </div>
   );
 }
