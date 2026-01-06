@@ -10,6 +10,7 @@ import RadioButton from "./components/Forms/RadioButton";
 import DropDown from "./components/Forms/DropDown";
 import SubmitForm from "./components/Forms/SubmitForm";
 import TextArea from "./components/Forms/TextArea";
+import SuspenseLazy from "./components/Suspense/SuspenseLazy";
 
 function App() {
   const customers = [
@@ -33,6 +34,7 @@ function App() {
       <DropDown/>
       <SubmitForm/>
       <TextArea/>
+      <SuspenseLazy/>
 
     </div>
   );
