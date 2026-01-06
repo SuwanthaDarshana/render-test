@@ -8,6 +8,7 @@ import MultipleInput from "./components/Forms/MultipleInput";
 import CheckBox from "./components/Forms/CheckBox";
 import RadioButton from "./components/Forms/RadioButton";
 import DropDown from "./components/Forms/DropDown";
+import SubmitForm from "./components/Forms/SubmitForm";
 
 function App() {
   const customers = [
@@ -29,6 +30,7 @@ function App() {
       <CheckBox/>
       <RadioButton/>
       <DropDown/>
+      <SubmitForm/>
 
     </div>
   );
