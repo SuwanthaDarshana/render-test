@@ -9,6 +9,7 @@ import CheckBox from "./components/Forms/CheckBox";
 import RadioButton from "./components/Forms/RadioButton";
 import DropDown from "./components/Forms/DropDown";
 import SubmitForm from "./components/Forms/SubmitForm";
+import TextArea from "./components/Forms/TextArea";
 
 function App() {
   const customers = [
@@ -31,6 +32,7 @@ function App() {
       <RadioButton/>
       <DropDown/>
       <SubmitForm/>
+      <TextArea/>
 
     </div>
   );
