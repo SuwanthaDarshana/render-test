@@ -11,6 +11,10 @@ import DropDown from "./components/Forms/DropDown";
 import SubmitForm from "./components/Forms/SubmitForm";
 import TextArea from "./components/Forms/TextArea";
 import SuspenseLazy from "./components/Suspense/SuspenseLazy";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Home from "./components/RouterPages/Home";
+import About from "./components/RouterPages/About";
+import Contact from "./components/RouterPages/Contact";
 
 function App() {
   const customers = [
@@ -25,17 +29,31 @@ function App() {
       {customers.map((customer) => {
         return <Customer {...customer} key={customer.id} />;
       })}
-      <Goal isGoal={true}/>
-      <Fruits/>
-      <MyForm/>
-      <MultipleInput/>
-      <CheckBox/>
-      <RadioButton/>
-      <DropDown/>
-      <SubmitForm/>
-      <TextArea/>
-      <SuspenseLazy/>
+      <Goal isGoal={true} />
+      <Fruits />
+      <MyForm />
+      <MultipleInput />
+      <CheckBox />
+      <RadioButton />
+      <DropDown />
+      <SubmitForm />
+      <TextArea />
+      <SuspenseLazy />
 
+      <BrowserRouter>
+        {/** React Router code will go here in future */}
+        <h3>-------Adding Rooutes--------</h3>
+        <nav>
+          <Link to="/">Home</Link> | <Link to="/about">About</Link> |{" "}
+          <Link to="/contact">Contact</Link>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
