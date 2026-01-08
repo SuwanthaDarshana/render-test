@@ -15,6 +15,8 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "./components/RouterPages/Home";
 import About from "./components/RouterPages/About";
 import Contact from "./components/RouterPages/Contact";
+import ContactName from "./components/RouterPages/ContactName";
+import ContactNumbers from "./components/RouterPages/ContactNumbers";
 
 function App() {
   const customers = [
@@ -51,7 +53,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />}>
+            <Route path="name" element={<ContactName />} />
+            <Route path="number" element={<ContactNumbers />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
