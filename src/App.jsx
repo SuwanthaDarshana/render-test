@@ -18,6 +18,7 @@ import Contact from "./components/RouterPages/Contact";
 import ContactName from "./components/RouterPages/ContactName";
 import ContactNumbers from "./components/RouterPages/ContactNumbers";
 import Color from "./components/Hooks/UseState/Color";
+import Timer from "./components/Hooks/UseEffect/Timer";
 
 function App() {
   const customers = [
@@ -62,6 +63,7 @@ function App() {
       </BrowserRouter>
 
       <Color />
+      <Timer/>
     </div>
   );
 }
