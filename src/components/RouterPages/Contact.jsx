@@ -1,6 +1,6 @@
-import React from "react";
-import { Link, Outlet } from "react-router-dom";
 
+import { Link, Outlet } from "react-router-dom";
+/*Nested Routes */
 const Contact = () => {
   return (
     <div>
@@ -9,7 +9,7 @@ const Contact = () => {
         <Link to="/contact/name">Go to Names</Link> |{" "}
         <Link to="/contact/number">Go to Phone Numbers</Link>
       </nav>
-        <Outlet />
+      <Outlet />    // This is where nested route components will be rendered
     </div>
   );
 };

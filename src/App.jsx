@@ -17,6 +17,7 @@ import About from "./components/RouterPages/About";
 import Contact from "./components/RouterPages/Contact";
 import ContactName from "./components/RouterPages/ContactName";
 import ContactNumbers from "./components/RouterPages/ContactNumbers";
+import Color from "./components/Hooks/UseState/Color";
 
 function App() {
   const customers = [
@@ -59,6 +60,8 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+
+      <Color />
     </div>
   );
 }
