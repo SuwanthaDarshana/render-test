@@ -19,6 +19,8 @@ import ContactName from "./components/RouterPages/ContactName";
 import ContactNumbers from "./components/RouterPages/ContactNumbers";
 import Color from "./components/Hooks/UseState/Color";
 import Timer from "./components/Hooks/UseEffect/Timer";
+import PropDrilling from "./components/Hooks/UseContext/PropDrilling";
+import Component from "./components/Hooks/UseContext/Component";
 
 function App() {
   const customers = [
@@ -64,6 +66,7 @@ function App() {
 
       <Color />
       <Timer/>
+      <Component/>
     </div>
   );
 }
