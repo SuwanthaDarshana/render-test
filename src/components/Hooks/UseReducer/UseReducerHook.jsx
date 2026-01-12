@@ -19,11 +19,10 @@ const UseReducerHook = () => {
 
   return (
     <div>
-      <h3 style={{ color: "red" }}>useReducer Hook</h3>
+      <h3 style={{ color: "red" }}>5.useReducer Hook</h3>
       <h4>Count: {state.count}</h4>
       <button onClick={() => dispatch({ type: "increment" })}>Increment</button>
       <button onClick={() => dispatch({ type: "decrement" })}>Decrement</button>
-      <Color />
     </div>
   );
 };
