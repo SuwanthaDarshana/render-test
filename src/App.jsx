@@ -21,6 +21,7 @@ import Color from "./components/Hooks/UseState/Color";
 import Timer from "./components/Hooks/UseEffect/Timer";
 import PropDrilling from "./components/Hooks/UseContext/PropDrilling";
 import Component from "./components/Hooks/UseContext/Component";
+import UseRefComponent from "./components/Hooks/UseRef/UseRefComponent";
 
 function App() {
   const customers = [
@@ -67,6 +68,7 @@ function App() {
       <Color />
       <Timer/>
       <Component/>
+      <UseRefComponent/>
     </div>
   );
 }
