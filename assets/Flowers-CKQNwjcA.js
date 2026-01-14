@@ -1,0 +1,1 @@
+import{j as i}from"./index-DPMA7xNt.js";const s=()=>i.jsx("div",{children:i.jsxs("ul",{children:[i.jsx("li",{children:"Okid"}),i.jsx("li",{children:"Rose"}),i.jsx("li",{children:"Jasmine"}),i.jsx("li",{children:"Sunflower"}),i.jsx("li",{children:"Lily"})]})});export{s as default};
