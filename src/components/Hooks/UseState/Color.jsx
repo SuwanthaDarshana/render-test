@@ -45,6 +45,7 @@ const Color = () => {
             <h4>Count:{count}</h4>
             <button onClick={()=>setCount(count+1)}>Increase Count</button>
             <button onClick={()=>setCount(count-1)}>Decrease Count</button>
+            <hr />
         </div>
     );
 }
