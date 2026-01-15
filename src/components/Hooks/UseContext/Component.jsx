@@ -9,7 +9,7 @@ const Component = () => {
   return (
     <div>
       <h3 style={{color:"red"}}>3. UseContext Hook</h3>
-      <UserContext.Provider value={user}>
+      <UserContext.Provider value={{user, setUser}}>
         <h3>Hello : {user}</h3>
         <Component4 />
       </UserContext.Provider>
@@ -27,12 +27,13 @@ const Component4 = () => {
 };
 
 const Component5 = () => {
-  const user = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
 
   return (
     <div>
       <h2>Component 3</h2>
       <h3>Hello : {user}</h3>
+       <button onClick={() => setUser("Suwantha")}>Change User</button>
     </div>
   );
 };

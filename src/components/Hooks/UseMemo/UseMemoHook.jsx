@@ -1,6 +1,9 @@
 import React, { useMemo, useState } from "react";
 
 const UseMemoHook = () => {
+
+  console.log("UseMemoHook component rendered");
+
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
 
@@ -16,6 +19,8 @@ const UseMemoHook = () => {
       <p>Double Count: {doubleCount}</p>
         <button onClick={() => setCount(count + 1)}>Increment Count</button>
         <input
+          type="text"
+          value={text}
           placeholder="Type something..."
           onChange={(e) => setText(e.target.value)}
         />

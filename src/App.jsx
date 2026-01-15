@@ -74,7 +74,7 @@ function App() {
 
       <Color />
       <Timer/>
-      <Component/>
+      <Component/> {/* UseContext Hook */}
       <UseRefComponent/>
       <UseReducerHook/>
       <Example1/>
