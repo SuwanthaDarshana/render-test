@@ -10,11 +10,12 @@ const reducer = (state, action) => {
       return { count: state.count - 1 };
 
     default:
-      return state;
+      return state; // return current state if action type is unrecognized
   }
 };
 
 const UseReducerHook = () => {
+
   const [state, dispatch] = useReducer(reducer, { count: 0 });
 
   return (

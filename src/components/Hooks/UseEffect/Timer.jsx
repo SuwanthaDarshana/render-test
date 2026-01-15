@@ -19,7 +19,7 @@ const Timer = () => {
     useEffect(()=>{
         console.log("Number state has changed:", number);
 
-    },[number]);
+    },[number]);   // This effect runs every time the number changes
 
     return (
         <div>

@@ -27,6 +27,7 @@ import UseMemoHook from "./components/Hooks/UseMemo/UseMemoHook";
 import NotUseCallBackHook from "./components/Hooks/UseCallBack/NotUseCallBackHook";
 import UseCallbackHook from "./components/Hooks/UseCallBack/UseCallbackHook";
 import CustomHook from "./components/Hooks/CustomHook/CustomHook";
+import Example1 from "./components/Hooks/UseReducer/Example1";
 
 function App() {
   const customers = [
@@ -75,6 +76,7 @@ function App() {
       <Component/>
       <UseRefComponent/>
       <UseReducerHook/>
+      <Example1/>
       <UseMemoHook/>
       {/* <NotUseCallBackHook/> */}
       <UseCallbackHook/>
