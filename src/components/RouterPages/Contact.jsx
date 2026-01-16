@@ -9,7 +9,7 @@ const Contact = () => {
         <Link to="/contact/name">Go to Names</Link> |{" "}
         <Link to="/contact/number">Go to Phone Numbers</Link>
       </nav>
-      <Outlet />    // This is where nested route components will be rendered
+      <Outlet />    {/* This is where nested route components will be rendered */}
     </div>
   );
 };

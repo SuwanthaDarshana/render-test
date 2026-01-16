@@ -57,6 +57,7 @@ function App() {
       <SubmitForm />
       <TextArea />
       <SuspenseLazy />
+
       <BrowserRouter>
         {/** React Router code will go here in future */}
         <h3>-------Adding Rooutes--------</h3>
@@ -74,6 +75,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      
       <Color />
       <Timer />
       <Component /> {/* UseContext Hook */}

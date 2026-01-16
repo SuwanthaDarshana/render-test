@@ -1,11 +1,16 @@
-import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
-    return (
-        <div>
-            <h3>About</h3>
-        </div>
-    );
-}
+  const backtoHome = useNavigate();
+
+  return (
+    <div>
+      <h3>About</h3>
+      <button onClick={() => backtoHome("/")}>
+        Back to Home (useNavigate)
+      </button>
+    </div>
+  );
+};
 
 export default About;
