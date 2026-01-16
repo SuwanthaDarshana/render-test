@@ -29,6 +29,9 @@ import UseCallbackHook from "./components/Hooks/UseCallBack/UseCallbackHook";
 import CustomHook from "./components/Hooks/CustomHook/CustomHook";
 import Example1 from "./components/Hooks/UseReducer/Example1";
 import Parent from "./components/Hooks/UseCallBack/Example/Parent";
+import { ThemeProvider } from "./components/Hooks/UseContext/UseContextExample/ThemeContext";
+import ThemedButton from "./components/Hooks/UseContext/UseContextExample/ThemedButton";
+import UseInteractionExample from "./components/Hooks/UseInteraction/UseInteractionExample";
 
 function App() {
   const customers = [
@@ -53,7 +56,6 @@ function App() {
       <SubmitForm />
       <TextArea />
       <SuspenseLazy />
-
       <BrowserRouter>
         {/** React Router code will go here in future */}
         <h3>-------Adding Rooutes--------</h3>
@@ -71,18 +73,24 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-
       <Color />
-      <Timer/>
-      <Component/> {/* UseContext Hook */}
-      <UseRefComponent/>
-      <UseReducerHook/>
-      <Example1/>
-      <UseMemoHook/>
+      <Timer />
+      <Component /> {/* UseContext Hook */}
+      <ThemeProvider>
+        <div>
+          <h3 style={{color:"green"}}>React Context API Theme Example</h3>
+          <ThemedButton />
+        </div>
+      </ThemeProvider>
+      <UseRefComponent />
+      <UseReducerHook />
+      <Example1 />
+      <UseMemoHook />
       {/* <NotUseCallBackHook/> */}
-      <UseCallbackHook/>
-      <Parent/>
-      <CustomHook/>
+      <UseCallbackHook />
+      <Parent />
+      <UseInteractionExample/>
+      <CustomHook />
     </div>
   );
 }

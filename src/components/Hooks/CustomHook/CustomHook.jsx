@@ -6,7 +6,7 @@ const CustomHook = () => {
 
     return (
         <div>
-            <h3 style={{ color: "red" }}>8.Custom Hook</h3>
+            <h3 style={{ color: "red" }}>9.Custom Hook</h3>
             <h3>Count: {count}</h3>
             <button onClick={increment}>Increment</button>
         </div>
