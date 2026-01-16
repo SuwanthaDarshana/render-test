@@ -32,6 +32,7 @@ import Parent from "./components/Hooks/UseCallBack/Example/Parent";
 import { ThemeProvider } from "./components/Hooks/UseContext/UseContextExample/ThemeContext";
 import ThemedButton from "./components/Hooks/UseContext/UseContextExample/ThemedButton";
 import UseInteractionExample from "./components/Hooks/UseInteraction/UseInteractionExample";
+import UseRefStoreValue from "./components/Hooks/UseRef/UseRefStoreValue";
 
 function App() {
   const customers = [
@@ -83,6 +84,7 @@ function App() {
         </div>
       </ThemeProvider>
       <UseRefComponent />
+      <UseRefStoreValue/>
       <UseReducerHook />
       <Example1 />
       <UseMemoHook />
