@@ -49,6 +49,7 @@ function App() {
       })}
       <Goal isGoal={true} />
       <Fruits />
+      <Customer name="Michael Scott" salary="80000" />
       <MyForm />
       <MultipleInput />
       <CheckBox />

@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 function MyForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const emailRef = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();            // prevent page reload on form submission
@@ -11,6 +13,7 @@ function MyForm() {
 
   return (
     <div>
+      <div>
     <h3>Controlled Form</h3>
       <form onSubmit={handleSubmit}>
         <label>Enter Your Name:</label>
@@ -37,6 +40,14 @@ function MyForm() {
         <br /> <br />
         <button type="submit">Login</button>
       </form>
+    </div>
+    <div>
+      <h3>Uncontrolled Form</h3>
+      <form onSubmit={handleSubmit}>
+        <label>Enter Your Email:</label>
+        <input type="email" ref={emailRef} />
+      </form>
+    </div>
     </div>
   );
 }
